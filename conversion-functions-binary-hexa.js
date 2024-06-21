@@ -20,11 +20,12 @@ function binaryToDecimal(blob) {
     let result = parseInt(blob.slice(2), 2);
     console.log(result);
     return result;
-  }
+}
 
 /* Base 16 to base 10 */
 function hexadecimalToDecimal(blob) {
-    let result = parseInt(blob.slice(2), 16);
+    // let result = parseInt(blob.slice(2), 16);  // specifying base 16 not needed if 0x-- passed in
+    let result = parseInt(blob, 16);
     console.log(result);
     return result;
 }
